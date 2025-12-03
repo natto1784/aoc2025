@@ -4,9 +4,9 @@ SOURCE_DIR=$(realpath "$(dirname "$0")")
 INPUT_DIR=${INPUT_DIR:="$SOURCE_DIR/inputs"}
 
 help () {
-  echo "usage:   $0 <day1-day25>"
-  echo "example: $0 day15"
-  echo "         $0 15"
+  echo "usage:   $0 <day1-day12>"
+  echo "example: $0 day8"
+  echo "         $0 8"
   echo "         $0 all"
 }
 
@@ -32,7 +32,7 @@ if [[ -z "${AOC_SESSION}" ]]; then
 fi
 
 if [[ $1 == "all" ]]; then
-    for x in {1..25}; do fetch "$x"; done
+    for x in {1..12}; do fetch "$x"; done
 else
     fetch "${1#day}"
 fi
