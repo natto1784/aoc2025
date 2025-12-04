@@ -41,3 +41,11 @@ executable day03
   hs-source-dirs: src
   main-is:        Day03.hs
   build-depends:  libaoc
+
+executable day04
+  import:         common
+  hs-source-dirs: src
+  main-is:        Day04.hs
+  build-depends:
+    , containers
+    , libaoc
