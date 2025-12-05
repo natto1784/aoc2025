@@ -45,7 +45,7 @@
               name = n: "day${(if n < 10 then "0" else "") + toString n}";
             in
             with pkgs.lib;
-            genAttrs (map name (range 1 4)) (n: {
+            genAttrs (map name (range 1 5)) (n: {
               type = "app";
               program = "${self'.packages.aoc2025}/bin/${n}";
             });
