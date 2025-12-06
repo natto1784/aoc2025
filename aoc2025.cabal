@@ -55,3 +55,8 @@ executable day05
   hs-source-dirs: src
   main-is:        Day05.hs
   build-depends:  libaoc
+
+executable day06
+  import:         common
+  hs-source-dirs: src
+  main-is:        Day06.hs
